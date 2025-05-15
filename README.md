@@ -4,7 +4,11 @@
 
 This package provides a class called `RuntimeScriptableObject`, or RSO for short.
 
-RSO is the base class for a simple Dependency Injection framework.
+RSO forms the basis for a much simpler, Unity-idiomatic Dependency Injection framework.
+
+* Much lighter weight than all other Unity DI frameworks
+* No custom menus, no code generation steps, no foreign paradigms
+* Feels like using a built-in Unity framework, not like ASP.NET or Spring Boot
 
 # Install
 
@@ -32,3 +36,25 @@ class ThingManager : RuntimeScriptableObject
 {
 }
 ```
+
+Add serialized fields and `Runtime` lifecycle methods, similar to `MonoBehaviour`
+
+```CSharp
+[CreateAssetMenu(fileName = nameof(ThingManager), menuName = "MyGame/Managers/" + nameof(ThingManager))]
+class ThingManager : RuntimeScriptableObject
+{
+    public string ApiUrl;
+
+    public override void RuntimeAwake()
+    {
+        Debug.Log($"{name}.ApiUrl = {ApiUrl}");
+    }
+}
+```
+
+Now you can create multiple `ThingManager` classes that contain different data for different use cases.
+
+* `MockThingManager` for writing tests
+* `LobbyThingManager` for a lobby system
+* `ArtTestThingManager` for your artists' test scenes
+* etc...
