@@ -9,6 +9,8 @@ using UnityEditor.AddressableAssets.Build.DataBuilders;
 
 namespace MikeSchweitzer.Rso
 {
+    // Override this in Project Settings to be lower than any other class.
+    [DefaultExecutionOrder(-10000)]
     public class RuntimeScriptableObject : ScriptableObject
     {
         #region Private Fields
