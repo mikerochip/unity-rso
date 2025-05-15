@@ -1,0 +1,21 @@
+{
+  "name": "com.mikeschweitzer.rso",
+  "version": "1.0.0",
+  "displayName": "Runtime Scriptable Object",
+  "description": "Simple base class for idiomatic dependency injection based on ScriptableObject.",
+  "license": "MIT",
+  "unity": "2020.1",
+  "dependencies": {
+    "com.unity.addressables": "1.25.0"
+  },
+  "keywords": [
+    "runtime",
+    "scriptable",
+    "object"
+  ],
+  "author": {
+    "name": "Mike Schweitzer",
+    "email": "mike@mikeschweitzer.com",
+    "url": "https://github.com/mikerochip/unity-rso"
+  }
+}

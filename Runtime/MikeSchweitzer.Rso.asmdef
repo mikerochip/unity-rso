@@ -1,0 +1,16 @@
+{
+    "name": "MikeSchweitzer.Rso",
+    "rootNamespace": "MikeSchweitzer.Rso",
+    "references": [
+        "Unity.Addressables",
+        "Unity.Addressables.Editor"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

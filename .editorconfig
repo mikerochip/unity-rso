@@ -1,0 +1,30 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# general stuff
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Markdown, config files
+[*.{md,yml,yaml,json,ini,config}]
+insert_final_newline = false
+trim_trailing_whitespace = false
+indent_size = 2
+
+# Shell scripts
+[*.{command,sh,bash,zsh,ps1,psm1}]
+end_of_line = lf
+
+# Windows batch files
+[*.{bat,cmd}]
+end_of_line = crlf
+
+# VS project files
+[*.{sln,csproj,fsproj,vbproj,vcxproj,vcproj,dbproj}]
+end_of_line = crlf
+[*.{lsproj,wixproj,modelproj,sqlproj,wmaproj,xproj}]
+end_of_line = crlf
+[*.{booproj,unityproj,props,filters,vcxitems}]
+end_of_line = crlf
