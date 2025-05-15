@@ -2,13 +2,11 @@
 
 [![Unity Version](https://img.shields.io/badge/Unity-2020.1%2B-blueviolet?logo=unity)](https://unity.com/releases/editor/archive)
 
-This package provides a class called `RuntimeScriptableObject`, or RSO for short.
-
-RSO forms the basis for a much simpler, Unity-idiomatic Dependency Injection framework.
+This package provides a class called `RuntimeScriptableObject`, or RSO for short. RSO is the basis of a simple, idiomatic Dependency Injection framework.
 
 * Much lighter weight than all other Unity DI frameworks
-* No custom menus, no code generation steps, no foreign paradigms
-* Feels like using a built-in Unity framework, not like ASP.NET or Spring Boot
+* No custom menus, no code generation steps
+* Feels like using a built-in Unity framework, not like forcing ASP.NET or Spring Boot into Unity
 
 # Install
 
